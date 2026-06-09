@@ -21,7 +21,7 @@ const AppContent = () => {
       description: "O CV será baixado em breve.",
     });
     const link = document.createElement('a');
-    link.href = '/pedro-henrique-cv.pdf';
+    link.href = '/cv.pdf';
     link.download = 'Pedro_Henrique_Silva_Souza_CV.pdf';
     document.body.appendChild(link);
     link.click();

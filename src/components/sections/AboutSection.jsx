@@ -6,11 +6,11 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-12 text-center">
+        <div className="flex flex-col md:flex-row items-center gap-12">
           <motion.div
-            className="max-w-3xl"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            className="md:w-1/2"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
@@ -25,7 +25,7 @@ Gosto de entender como as coisas funcionam por baixo: arquitetura, fluxo de dado
             </p>
           </motion.div>
           <motion.div
-            className="flex justify-center"
+            className="md:w-1/2 flex justify-center"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
