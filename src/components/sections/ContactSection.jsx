@@ -73,21 +73,21 @@ const ContactSection = ({ onSubmit, onDownloadCV }) => {
                 <Smartphone className="h-6 w-6 text-primary group-hover:scale-110 transition-transform" />
                  <div>
                   <p className="font-medium text-foreground">WhatsApp</p>
-                  <p className="text-muted-foreground text-sm">+55 (11) 96448-6899 (Substituir)</p>
+                  <p className="text-muted-foreground text-sm">+55 (11) 96448-6899</p>
                 </div>
               </a>
-              <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow border border-border group">
+              <a href="https://linkedin.com/in/pedro-henrique-silva10" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow border border-border group">
                 <Linkedin className="h-6 w-6 text-primary group-hover:scale-110 transition-transform" />
                 <div>
                   <p className="font-medium text-foreground">LinkedIn</p>
-                  <p className="text-muted-foreground text-sm">linkedin.com/in/pedrohssouza (Substituir)</p>
+                  <p className="text-muted-foreground text-sm">linkedin.com/in/pedrohssouza</p>
                 </div>
               </a>
               <a href="https://github.com/pedrohssouza" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow border border-border group">
                 <Github className="h-6 w-6 text-primary group-hover:scale-110 transition-transform" />
                 <div>
                   <p className="font-medium text-foreground">GitHub</p>
-                  <p className="text-muted-foreground text-sm">github.com/pedrohssouza (Substituir)</p>
+                  <p className="text-muted-foreground text-sm">github.com/pedrohssouza</p>
                 </div>
               </a>
             </div>

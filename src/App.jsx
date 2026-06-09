@@ -1,15 +1,8 @@
 
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
+import React from 'react';
 import { Toaster } from '@/components/ui/toaster';
 import { useToast } from '@/components/ui/use-toast';
-import { Menu, X, Download, Send, Linkedin, Github, Mail, Smartphone, Code, Server, Database, Settings, Filter, Eye, GitBranch } from 'lucide-react';
-import { ThemeProvider, useTheme } from '@/components/theme-provider';
-import { Switch } from '@/components/ui/switch';
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { ThemeProvider } from '@/components/theme-provider';
 
 import HeroSection from '@/components/sections/HeroSection';
 import AboutSection from '@/components/sections/AboutSection';

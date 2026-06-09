@@ -24,17 +24,7 @@ const Header = ({ onDownloadCV }) => {
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border transition-colors duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="flex items-center gap-2"
-          >
-            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-purple-600 flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">PH</span>
-            </div>
-            <span className="font-bold text-xl text-foreground">Pedro Henrique</span>
-          </motion.div>
+        
 
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (

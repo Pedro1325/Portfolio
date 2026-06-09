@@ -11,7 +11,7 @@ const projectsData = [
     id: 1,
     title: "E-commerce Platform",
     description: "Plataforma de e-commerce completa com carrinho, checkout e painel de admin.",
-    technologies: ["HTML", "CSS", "JavaScript, PHP e Bootstrap"],
+    technologies: ["HTML", "CSS", "JavaScript", "PHP", "Bootstrap"],
     imageUrl: "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     liveLink: "https://youtu.be/uYfNqnE2sL4?si=h9Fyaer7iQvHT9lw",
     sourceLink: "https://github.com/Pedro1325/bestprice.git",
@@ -30,23 +30,14 @@ const projectsData = [
   {
     id: 3,
     title: "Portfolio DRA. Sarah Sobral",
-    description: "Portfolio Profissional ultilizando HTML, CSS e JavaScript. Com estudos da paleta de cores para ser o mais atrativo para o usuario",
-    technologies: ["HTML,CSS e Javascript"],
+    description: "Portfolio Profissional utilizando HTML, CSS e JavaScript. Com estudos da paleta de cores para ser o mais atrativo para o usuario",
+    technologies: ["HTML", "CSS", "JavaScript"],
     imageUrl: "https://images.unsplash.com/photo-1547480053-7d154f48508a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     liveLink: "https://psicologa-portfolio-x2qw.vercel.app/",
     sourceLink: "https://github.com/Pedro1325/Psicologa_portfolio.git",
     type: "Web App"
   },
-  {
-    id: 4,
-    title: "Blog de Tecnologia",
-    description: "Plataforma de blog com posts, categorias e comentários, otimizado para SEO.",
-    technologies: ["Next.js", "Tailwind CSS", "Markdown", "Supabase"],
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    liveLink: "#",
-    sourceLink: "#",
-    type: "Website"
-  },
+  
 ];
 
 const ProjectCard = ({ project }) => {
@@ -165,7 +156,7 @@ const ProjectsSection = () => {
 
         {filteredProjects.length > 0 ? (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.slice(0, 3).map((project) => ( // Display top 3-5 projects
+            {filteredProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
@@ -173,7 +164,7 @@ const ProjectsSection = () => {
           <p className="text-center text-muted-foreground">Nenhum projeto encontrado com os filtros selecionados.</p>
         )}
         
-        {projectsData.length > 3 && (
+        {projectsData.length > 6 && (
            <div className="text-center mt-12">
              <Button variant="link" className="text-primary">Ver todos os projetos (Em breve)</Button>
            </div>

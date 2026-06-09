@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Settings, Database, Server, Wind, Palette, Type, GitMerge, Box } from 'lucide-react';
+import { Code, Settings, Server, Wind, Palette, Type, GitMerge, Box } from 'lucide-react';
 
 const skillsData = [
   { name: "HTML5", icon: <Code className="h-8 w-8 text-primary" />, category: "Frontend" },

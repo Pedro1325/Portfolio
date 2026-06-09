@@ -18,14 +18,11 @@ const Footer = () => {
             <a href="https://linkedin.com/in/pedrohssouza" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-primary transition-colors">
               <Linkedin className="h-6 w-6" />
             </a>
-            <a href="mailto:pedro.h.silva.souza.dev@example.com" aria-label="Email" className="hover:text-primary transition-colors">
+            <a href="mailto:pedroh13022006@gmail.com" aria-label="Email" className="hover:text-primary transition-colors">
               <Mail className="h-6 w-6" />
             </a>
           </div>
         </div>
-        <p className="text-xs text-center mt-4 text-muted-foreground/70">
-          Inspirado no portfólio de Rhuan Bello.
-        </p>
       </div>
     
     </footer>

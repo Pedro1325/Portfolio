@@ -7,8 +7,6 @@ import { cn } from '@/lib/utils';
 
 const Select = SelectPrimitives.Root;
 
-const SelectGroup = SelectPrimitives.Group;
-
 const SelectValue = SelectPrimitives.Value;
 
 const SelectTrigger = React.forwardRef(({ className, children, ...props }, ref) => (
@@ -52,15 +50,6 @@ const SelectContent = React.forwardRef(({ className, children, position = 'poppe
 ));
 SelectContent.displayName = SelectPrimitives.Content.displayName;
 
-const SelectLabel = React.forwardRef(({ className, ...props }, ref) => (
-  <SelectPrimitives.Label
-    ref={ref}
-    className={cn('py-1.5 pl-8 pr-2 text-sm font-semibold', className)}
-    {...props}
-  />
-));
-SelectLabel.displayName = SelectPrimitives.Label.displayName;
-
 const SelectItem = React.forwardRef(({ className, children, ...props }, ref) => (
   <SelectPrimitives.Item
     ref={ref}
@@ -81,22 +70,10 @@ const SelectItem = React.forwardRef(({ className, children, ...props }, ref) => 
 ));
 SelectItem.displayName = SelectPrimitives.Item.displayName;
 
-const SelectSeparator = React.forwardRef(({ className, ...props }, ref) => (
-  <SelectPrimitives.Separator
-    ref={ref}
-    className={cn('-mx-1 my-1 h-px bg-muted', className)}
-    {...props}
-  />
-));
-SelectSeparator.displayName = SelectPrimitives.Separator.displayName;
-
 export {
   Select,
-  SelectGroup,
   SelectValue,
   SelectTrigger,
   SelectContent,
-  SelectLabel,
   SelectItem,
-  SelectSeparator,
 };
